@@ -177,7 +177,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding-bottom: 160px;
+  padding-bottom: 160pxgit;
 }
 
 .work:after {
@@ -192,7 +192,7 @@ ul {
   z-index: -1;
 }
 
-.work .work-section {
+.work-section {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,8 +205,40 @@ ul {
       flex-wrap: wrap;
 }
 
-.work .work-section .card-text {
+.work-section .card:nth-child(1) .img, .work-section .card:nth-child(2) .img, .work-section .card:nth-child(3) .img {
+  width: 384px;
+  height: 528px;
+}
+
+.work-section .card:nth-child(4) .img, .work-section .card:nth-child(5) .img {
+  width: 588px;
+  height: 424px;
+}
+
+.work-section .card:nth-child(6) .img, .work-section .card:nth-child(7) .img, .work-section .card:nth-child(8) .img {
+  width: 384px;
+  height: 280px;
+}
+
+.work-section .card .card-text {
   font-size: 20px;
+}
+
+.work-section .card .img {
+  overflow: hidden;
+}
+
+.work-section .card .img img {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  overflow: hidden;
+}
+
+.work-section .card .img img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 .footer {
