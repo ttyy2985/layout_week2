@@ -1,7 +1,8 @@
 *{
-    border:1px solid #000;
+    // border:1px solid #000;
     font-family: Roboto, 微軟正黑體, sans-serif;
     box-sizing: border-box;
+    font-style: italic;
 }
 ul{
     list-style: none;
@@ -15,12 +16,6 @@ ul{
     justify-content: center;
     align-items: center;
     color:white;
-    font-style: italic;
-    .text{  
-        display: block;  
-        line-height: 42px;
-        font-size: 24px;
-    }
     .h1{
         line-height: 106px;
         font-size: 80px;
@@ -31,9 +26,19 @@ ul{
         justify-content: space-between;
     }
 }
+.text{  
+    display: block;  
+    line-height: 42px;
+    font-size: 24px;
+}
 .about{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding: 55px 0;
+    flex-direction: column;
+    .title{
+        font-size: 64px;
+    }
 }
 
 
@@ -43,6 +48,38 @@ ul{
 .mb-27{
     margin-bottom: 27px;
 }
+.mb-31{
+    margin-bottom: 31px;
+}
 .mb-63{
     margin-bottom: 63px;
+}
+.mb-21{
+    margin-bottom: 21px;
+}
+.mb-39{
+    margin-bottom: 39px;
+}
+.border{
+    width:384px;
+    height:1px;
+    margin:0;
+    margin-bottom: 31px;
+}
+.text-center{
+    text-align: center;
+}
+.circle{
+    position: relative;
+    // padding-left:16px;
+    &:before{
+        content:'';
+        width:22px;
+        height: 22px;
+        position: absolute;
+        top:10px;
+        left:-38px;
+        border-radius: 50%;
+        background-color: #891818;
+    }
 }

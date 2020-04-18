@@ -1,9 +1,9 @@
 @charset "UTF-8";
 * {
-  border: 1px solid #000;
   font-family: Roboto, 微軟正黑體, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-style: italic;
 }
 
 ul {
@@ -25,13 +25,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-style: italic;
-}
-
-.introduction .text {
-  display: block;
-  line-height: 42px;
-  font-size: 24px;
 }
 
 .introduction .h1 {
@@ -49,13 +42,28 @@ ul {
           justify-content: space-between;
 }
 
+.text {
+  display: block;
+  line-height: 42px;
+  font-size: 24px;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 55px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .title {
+  font-size: 64px;
 }
 
 .px-13 {
@@ -66,7 +74,45 @@ ul {
   margin-bottom: 27px;
 }
 
+.mb-31 {
+  margin-bottom: 31px;
+}
+
 .mb-63 {
   margin-bottom: 63px;
+}
+
+.mb-21 {
+  margin-bottom: 21px;
+}
+
+.mb-39 {
+  margin-bottom: 39px;
+}
+
+.border {
+  width: 384px;
+  height: 1px;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+}
+
+.circle:before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 10px;
+  left: -38px;
+  border-radius: 50%;
+  background-color: #891818;
 }
 /*# sourceMappingURL=index.css.map */
