@@ -226,6 +226,7 @@ ul {
 
 .work-section .card .img {
   overflow: hidden;
+  cursor: pointer;
 }
 
 .work-section .card .img img {
