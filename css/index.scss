@@ -33,11 +33,12 @@ ul{
 }
 .title{
     font-size: 64px;
+    margin-top: 56px;
 }
 .about{
     display: flex;
     align-items: center;
-    padding: 55px 0;
+    padding-bottom: 55px;
     flex-direction: column;
 }
 
@@ -72,6 +73,15 @@ ul{
 .mr-24{
     margin-right: 24px;
 }
+.mb-23{
+    margin-bottom: 23px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
 .border{
     width:384px;
     height:1px;
@@ -104,5 +114,41 @@ ul{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding:56px 0 160px 0;
+    padding-bottom:160px;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &:after{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        height: calc(100% - 361px);
+        width: 100%;
+        background: url('../img/photo-1561291386-5be50364cfb5.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index:-1;
+    }
+    .work-section{
+        width:1200px;
+        display: flex;
+        justify-content: space-between;
+        color:white;
+        flex-wrap: wrap;
+        .card-text{
+            font-size: 20px;
+        }
+    }
+}
+
+.footer{
+    background-color: #000;
+    padding-bottom: 80px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
