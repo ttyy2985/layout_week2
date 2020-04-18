@@ -177,6 +177,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-bottom: 160px;
 }
 
 .work:after {
