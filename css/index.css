@@ -48,6 +48,10 @@ ul {
   font-size: 24px;
 }
 
+.title {
+  font-size: 64px;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,12 +66,12 @@ ul {
           flex-direction: column;
 }
 
-.about .title {
-  font-size: 64px;
-}
-
 .px-13 {
   padding: 0 13px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
 }
 
 .mb-27 {
@@ -90,10 +94,24 @@ ul {
   margin-bottom: 39px;
 }
 
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
 .border {
   width: 384px;
   height: 1px;
+  background-color: #000;
   margin: 0;
+  border: none;
   margin-bottom: 31px;
 }
 
@@ -114,5 +132,23 @@ ul {
   left: -38px;
   border-radius: 50%;
   background-color: #891818;
+}
+
+.brand {
+  background-color: #000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 56px 0 160px 0;
 }
 /*# sourceMappingURL=index.css.map */

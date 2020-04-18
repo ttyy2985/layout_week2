@@ -31,19 +31,22 @@ ul{
     line-height: 42px;
     font-size: 24px;
 }
+.title{
+    font-size: 64px;
+}
 .about{
     display: flex;
     align-items: center;
     padding: 55px 0;
     flex-direction: column;
-    .title{
-        font-size: 64px;
-    }
 }
 
 
 .px-13{
     padding:0 13px;
+}
+.mb-12{
+    margin-bottom: 12px;
 }
 .mb-27{
     margin-bottom: 27px;
@@ -60,10 +63,21 @@ ul{
 .mb-39{
     margin-bottom: 39px;
 }
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mr-24{
+    margin-right: 24px;
+}
 .border{
     width:384px;
     height:1px;
+    background-color: #000;
     margin:0;
+    border:none;
     margin-bottom: 31px;
 }
 .text-center{
@@ -82,4 +96,13 @@ ul{
         border-radius: 50%;
         background-color: #891818;
     }
+}
+.brand{
+    background-color: #000;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:56px 0 160px 0;
 }
