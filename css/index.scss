@@ -3,23 +3,40 @@
     font-family: Roboto, 微軟正黑體, sans-serif;
     box-sizing: border-box;
     font-style: italic;
+    margin:0;
 }
 ul{
     list-style: none;
     margin:0;
+    padding:0;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.img-list{
+    display: flex;
+    justify-content: center;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.text-bold{
+    font-weight: bold;
 }
 .introduction{
     width:100%;
     height: 960px;
     background: transparent url('../img/photo-1552393700-42696fb89bfa.png') center no-repeat padding-box;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color:white;
     .h1{
-        line-height: 106px;
+        line-height: 94px;
         font-size: 80px;
-        margin-top:-20px;
+        margin-top:0px;
     }
     .contact-list{
         display: flex;
@@ -33,12 +50,12 @@ ul{
 }
 .title{
     font-size: 64px;
-    margin-top: 56px;
+    line-height: 75px;
 }
 .about{
     display: flex;
     align-items: center;
-    padding-bottom: 55px;
+    padding:64px 0 56px 0;
     flex-direction: column;
 }
 
@@ -49,8 +66,14 @@ ul{
 .mb-12{
     margin-bottom: 12px;
 }
+.mb-8{
+    margin-bottom: 8px;
+}
 .mb-27{
     margin-bottom: 27px;
+}
+.mb-32{
+    margin-bottom: 32px;
 }
 .mb-31{
     margin-bottom: 31px;
@@ -73,7 +96,7 @@ ul{
 .mr-24{
     margin-right: 24px;
 }
-.mb-23{
+.mb-24{
     margin-bottom: 23px;
 }
 .mb-15{
@@ -114,14 +137,15 @@ ul{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom:160px;
+    padding:64px 0 160px 0;
 }
 .work{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-bottom: 160pxgit ;
+    padding:64px 0 162px 0 ;
+    
     &:after{
         content:'';
         position: absolute;
@@ -131,6 +155,7 @@ ul{
         background: url('../img/photo-1561291386-5be50364cfb5.png');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
         z-index:-1;
     }
 }
@@ -155,6 +180,8 @@ ul{
         }
         .card-text{
             font-size: 20px;
+            line-height: 42px;
+            margin: 16px 0 56px 0;  
         }
         .img{
             overflow: hidden;   
@@ -173,9 +200,6 @@ ul{
 
 .footer{
     background-color: #000;
-    padding-bottom: 80px;
     color:white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding:64px 0 80px 0;
 }
